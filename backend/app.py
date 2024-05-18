@@ -3,6 +3,16 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from flask import Flask, request, jsonify
 import torch
 import os
+from dotenv import load_dotenv
+
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Log loaded environment variables
+logging.debug(f"Loaded API_KEY: {os.getenv('API_KEY')}")
 
 # Use the emotion classification model
 model_name = "j-hartmann/emotion-english-distilroberta-base"
@@ -17,8 +27,17 @@ emotion_labels = ['anger', 'disgust', 'fear', 'joy', 'neutral', 'sadness', 'surp
 # Create a Flask web server
 app = Flask(__name__)
 
+# Load the API key from the environment variable
+API_KEY = os.getenv('API_KEY')
+
 @app.route('/emotion', methods=['POST'])
 def detect_emotion():
+    # Check for API key in the request headers
+    api_key = request.headers.get('x-api-key')
+    logging.debug(f"Received API key: {api_key}")
+    if api_key != API_KEY:
+        return jsonify({'error': 'Unauthorized'}), 401
+
     # Receive the text through the POST request
     text = request.get_json().get('text', '')
 
