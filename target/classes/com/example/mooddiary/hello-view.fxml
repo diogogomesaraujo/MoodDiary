@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.mooddiary.HelloController" stylesheets="@styles.css">
+    <children>
+        <HBox spacing="0" styleClass="main-container" HBox.hgrow="ALWAYS">
+            <VBox alignment="CENTER" spacing="20" styleClass="left-container" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+                <children>
+                    <Label text="Unveil the Sentiments in Your Words" styleClass="instruction-label"/>
+                    <TextArea fx:id="inputTextArea" promptText="Write your ideas here..." prefHeight="200.0" prefWidth="300.0" styleClass="text-area"/>
+                    <Button fx:id="submitButton" mnemonicParsing="false" text="Submit" styleClass="button"/>
+                </children>
+            </VBox>
+            <VBox fx:id="rightContainer" alignment="CENTER" spacing="20" styleClass="right-container" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+                <children>
+                    <ImageView fx:id="emotionImageView" fitHeight="300.0" fitWidth="300.0" styleClass="image-view"/>
+                </children>
+            </VBox>
+        </HBox>
+    </children>
+</StackPane>

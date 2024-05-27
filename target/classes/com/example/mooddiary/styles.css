@@ -1,0 +1,80 @@
+/* styles.css */
+
+.root {
+    -fx-background-color: #F0F2F5;
+    -fx-alignment: center;
+    -fx-padding: 0;
+}
+
+.main-container {
+    -fx-background-color: #F0F2F5;
+    -fx-alignment: center;
+    -fx-padding: 0;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+.left-container {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 40px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+    -fx-vgrow: always;
+    -fx-hgrow: always;
+}
+
+.right-container {
+    -fx-padding: 40px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+    -fx-vgrow: always;
+    -fx-hgrow: always;
+    -fx-background-image: url("background-image.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.instruction-label {
+    -fx-font-family: 'Garamond', serif; /* Changed to Garamond font */
+    -fx-font-size: 28px; /* Increased font size */
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 20px 0; /* Increased padding */
+    -fx-alignment: center;
+}
+
+.text-area {
+    -fx-padding: 20px;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(128, 128, 128, 0.3); /* Semi-transparent gray background */
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #888; /* Lighter text color for placeholder */
+    -fx-background-radius: 15px; /* More rounded corners */
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.button {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px;
+}
+
+.button:hover {
+    -fx-background-color: #555555;
+}
+
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+    -fx-padding: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
