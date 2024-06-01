@@ -1,0 +1,119 @@
+/* Import the Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* General styles */
+.root {
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+}
+
+/* Sidebar styles */
+.sidebar {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 20px;
+    -fx-spacing: 15px; /* Increased spacing */
+}
+
+.sidebar-header {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.sidebar-title {
+    -fx-font-size: 26px; /* Increased font size */
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.section-label {
+    -fx-font-size: 12px; /* Increased font size */
+    -fx-text-fill: #666;
+    -fx-padding: 20px 0 0px 0; /* Added padding for separation */
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-alignment: left;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.button:hover {
+    -fx-text-fill: #333;
+}
+
+.button:pressed {
+    -fx-background-color: rgba(76, 175, 80, 0.35);
+}
+
+/* Update the button-create class with a fun gradient */
+.button-create {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 10 20; /* Increased padding */
+    -fx-alignment: CENTER;
+}
+
+.button-create:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF6347, #FF4500);
+}
+
+.button-create:pressed {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF4500, #FF6347);
+}
+
+/* Updated Separator style */
+.separator {
+    -fx-background-color: #E0E0E0;
+    -fx-padding: 5px 0; /* Added padding */
+}
+
+.icon {
+    -fx-icon-color: #000000;
+}
+
+/* Update the sidebar-button class text color to match the section-label */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #666; /* Same as section-label color */
+    -fx-font-size: 14px;
+    -fx-border-color: transparent;
+    -fx-padding: 0 0;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.sidebar-button .graphic {
+    -fx-padding: 0 10 0 0;
+}
+
+.button-appointments {
+    -fx-background-color: #E3F2FD;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.button-appointments:hover {
+    -fx-background-color: #D1EAF9;
+}
+
+.button-appointments:pressed {
+    -fx-background-color: #C1E1F6;
+}
+
+.profile-section {
+    -fx-alignment: center-left;
+}
+
+.profile-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: black;
+}
