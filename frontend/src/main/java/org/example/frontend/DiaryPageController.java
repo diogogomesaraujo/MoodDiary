@@ -94,25 +94,25 @@ public class DiaryPageController {
         String message;
         switch (emotion) {
             case "joy":
-                message = "You seem Happy!";
+                message = "You seem happy!";
                 break;
             case "sadness":
-                message = "You seem Sad.";
+                message = "You seem sad.";
                 break;
             case "fear":
-                message = "You seem Fearful.";
+                message = "You seem fearful.";
                 break;
             case "surprise":
-                message = "You seem Surprised!";
+                message = "You seem surprised!";
                 break;
             case "neutral":
-                message = "You seem Neutral.";
+                message = "You seem neutral.";
                 break;
             case "disgust":
-                message = "You seem Disgusted.";
+                message = "You seem disgusted.";
                 break;
             case "anger":
-                message = "You seem Angry.";
+                message = "You seem angry.";
                 break;
             default:
                 message = "❗ Error in analyzing sentiment.";
