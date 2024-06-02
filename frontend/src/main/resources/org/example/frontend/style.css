@@ -57,7 +57,7 @@
 }
 
 /* Black button styles */
-.button-create {
+.button-create, .clear-button {
     -fx-background-color: #000000;
     -fx-text-fill: white;
     -fx-font-weight: 700; /* Ensure bold */
@@ -66,12 +66,12 @@
     -fx-alignment: CENTER;
 }
 
-.button-create:hover {
+.button-create:hover, .clear-button:hover {
     -fx-background-color: #333333;
     -fx-text-fill: white;
 }
 
-.button-create:pressed {
+.button-create:pressed, .clear-button:pressed {
     -fx-background-color: #555555;
     -fx-text-fill: white;
 }
@@ -83,7 +83,6 @@
     -fx-background-radius: 20;
     -fx-padding: 10 20;
 }
-
 
 .button-send:hover {
     -fx-background-color: #333333;
@@ -225,7 +224,12 @@
     -fx-background-color: #ffffff; /* Ensure background is white */
     -fx-padding: 20px; /* Add padding around the table */
     -fx-alignment: center; /* Center align the table */
-    -fx-pref-width: 100%; /* Ensure the table takes full width */
+}
+
+/* Remove the outer border around the scroll pane */
+.scroll-pane {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-color: transparent; /* Transparent border */
 }
 
 /* TableView styles */
@@ -237,7 +241,7 @@
     -fx-table-cell-border-color: transparent; /* Remove cell borders */
     -fx-focus-color: transparent; /* Remove focus color */
     -fx-faint-focus-color: transparent; /* Remove faint focus color */
-    -fx-pref-width: 100%; /* Ensure the table takes full width */
+    -fx-pref-width: -1; /* Allow the table width to be scalable */
 }
 
 /* TableColumn styles */
@@ -287,8 +291,8 @@
 .archive-table .table-cell {
     -fx-font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
     -fx-font-size: 14px; /* Standard font size */
-    -fx-text-fill: #666666; /* Medium gray text */
-    -fx-padding: 5px; /* Padding inside cells */
+    -fx-text-fill: #888; /* Medium gray text */
+    -fx-padding: 3px; /* Padding inside cells */
     -fx-border-color: transparent; /* No border */
 }
 
@@ -299,18 +303,80 @@
 }
 
 /* Custom scrollbar styles */
-.archive-table .scroll-bar {
+.scroll-pane .scroll-bar {
     -fx-padding: 0 4px;
     -fx-background-color: #f0f0f0; /* Light gray background */
 }
 
-.archive-table .scroll-bar:vertical .thumb,
-.archive-table .scroll-bar:horizontal .thumb {
+.scroll-pane .scroll-bar:vertical .thumb,
+.scroll-pane .scroll-bar:horizontal .thumb {
     -fx-background-color: #cccccc; /* Gray thumb color */
     -fx-background-radius: 5px; /* Rounded thumb corners */
 }
 
-.archive-table .scroll-bar:vertical .track,
-.archive-table .scroll-bar:horizontal .track {
+.scroll-pane .scroll-bar:vertical .track,
+.scroll-pane .scroll-bar:horizontal .track {
     -fx-background-color: transparent; /* Transparent track */
+}
+
+/* Clear button styles */
+.clear-button {
+    -fx-background-color: #000000; /* Black background */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-weight: 700; /* Ensure bold */
+    -fx-background-radius: 20; /* Match the create button's style */
+    -fx-padding: 10 20; /* Padding inside the button */
+    -fx-alignment: CENTER; /* Center align the text */
+}
+
+.clear-button:hover {
+    -fx-background-color: #333333; /* Darker background on hover */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.clear-button:pressed {
+    -fx-background-color: #555555; /* Even darker background on press */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.statsPieChart {
+    -fx-pie-label-visible: true;
+    -fx-label-line-color: #666; /* Gray lines for labels */
+    -fx-start-angle: 90;
+}
+
+.pie-chart .chart-series-pie {
+    -fx-pie-size: 80%; /* Smaller chart size for padding */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 3, 3);
+}
+
+.pie-chart .chart-pie-label {
+    -fx-font-size: 12px; /* Smaller font size for labels */
+    -fx-fill: #333; /* Darker text for better readability */
+}
+
+.pie-chart .data {
+    -fx-pie-slice-fill: transparent;
+    -fx-transition: fill 0.5s ease-out;
+}
+
+.pie-chart:hover .data {
+    -fx-scale: 1.05;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 3, 3);
+}
+
+.chart-color-1 { -fx-pie-color: #4285F4; }
+.chart-color-2 { -fx-pie-color: #EA4335; }
+.chart-color-3 { -fx-pie-color: #FBBC05; }
+.chart-color-4 { -fx-pie-color: #34A853; }
+.chart-color-5 { -fx-pie-color: #FF6F61; }
+
+.pie-chart {
+    -fx-border-color: transparent; /* Remove border */
+    -fx-background-color: transparent; /* Remove background */
+}
+
+.pie-chart .chart-legend {
+    -fx-background-color: transparent; /* Legend transparent */
+    -fx-padding: 10px;
 }

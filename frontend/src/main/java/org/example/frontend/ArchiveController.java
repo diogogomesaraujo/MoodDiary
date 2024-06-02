@@ -3,6 +3,7 @@ package org.example.frontend;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Button;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import javax.json.Json;
@@ -13,6 +14,8 @@ import javax.json.stream.JsonParsingException;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +33,20 @@ public class ArchiveController {
     @FXML
     private TableColumn<Entry, String> emotionColumn;
 
+    @FXML
+    private Button clearButton;
+
     private static final String FILE_PATH = "diary_entries.json";
+
+    @FXML
+    private void clearJsonFile() {
+        try {
+            Files.deleteIfExists(Paths.get(FILE_PATH));
+            tableView.getItems().clear(); // Clear the table view
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     public void initialize() {
@@ -44,10 +60,10 @@ public class ArchiveController {
         messageColumn.prefWidthProperty().bind(tableView.widthProperty().multiply(0.5)); // 50% of the table width
         emotionColumn.prefWidthProperty().bind(tableView.widthProperty().multiply(0.2)); // 20% of the table width
 
-        tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY); // Enable constrained resize policy
+        clearButton.setOnAction(event -> clearJsonFile()); // Set action for clear button
+
         tableView.getItems().setAll(loadEntries());
     }
-
 
     private List<Entry> loadEntries() {
         List<Entry> entries = new ArrayList<>();

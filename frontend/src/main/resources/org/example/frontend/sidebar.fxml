@@ -21,12 +21,12 @@
                     <Insets top="5.0" />
                 </VBox.margin>
             <children>
-               <ImageView fitHeight="48.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="58.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../../../images/logo-lettring.png" />
                   </image>
                   <HBox.margin>
-                     <Insets left="2.0" />
+                     <Insets left="-1.0" />
                   </HBox.margin>
                </ImageView>
             </children>

@@ -21,6 +21,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/DiaryPageController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/HelloApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/SidebarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/StatisticsController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/emotions/neutral.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Book.png" afterDir="false" />
@@ -33,6 +34,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/dashboard.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/diary-page.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/sidebar.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/statistics.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +140,7 @@
       <workItem from="1717202196652" duration="11324000" />
       <workItem from="1717214543624" duration="1233000" />
       <workItem from="1717256225968" duration="33924000" />
-      <workItem from="1717297227010" duration="138000" />
+      <workItem from="1717297227010" duration="5039000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontend.StatisticsController" spacing="20" alignment="CENTER">
+    <PieChart fx:id="emotionChart" />
+    <Label fx:id="topEmotion1" text="Most frequent: N/A" />
+    <Label fx:id="topEmotion2" text="Second most frequent: N/A" />
+    <Label fx:id="topEmotion3" text="Third most frequent: N/A" />
+</VBox>
