@@ -31,7 +31,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
          <children>
-            <Label fx:id="sentimentLabel" styleClass="section-label" text="Your emotions will appear below..." />
+            <Label fx:id="sentimentLabel" styleClass="input-instruction" text="Your emotions will appear below..." />
          </children>
       </VBox>
    </top>

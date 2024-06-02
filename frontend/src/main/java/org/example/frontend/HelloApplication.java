@@ -11,8 +11,8 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader sidebarLoader = new FXMLLoader(HelloApplication.class.getResource("sidebar.fxml"));
-        FXMLLoader dashboardLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
+        FXMLLoader sidebarLoader = new FXMLLoader(getClass().getResource("/org/example/frontend/sidebar.fxml"));
+        FXMLLoader dashboardLoader = new FXMLLoader(getClass().getResource("/org/example/frontend/dashboard.fxml"));
 
         BorderPane root = new BorderPane();
         root.setLeft(sidebarLoader.load());
@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
 
         Scene scene = new Scene(root, 689, 500); // Adjust dimensions as needed
         scene.getStylesheets().add(getClass().getResource("/org/example/frontend/style.css").toExternalForm());
-        stage.setTitle("MoodDiary.");
+        stage.setTitle("MoodDiary");
         stage.setScene(scene);
 
         // Set fixed size and disable resizing
