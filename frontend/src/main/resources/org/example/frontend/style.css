@@ -1,5 +1,5 @@
-/* Import the Open Sans font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* Import the Open Sans font with different weights */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 /* General styles */
 .root {
@@ -12,30 +12,33 @@
 .sidebar {
     -fx-background-color: #f8f9fa;
     -fx-padding: 20px;
-    -fx-spacing: 15px; /* Increased spacing */
+    -fx-spacing: 15px;
+    -fx-border-color: #e0e0e0; /* Add a subtle border to separate the sidebar */
+    -fx-border-width: 0 1px 0 0; /* Only on the right side */
+    -fx-pref-height: 100%; /* Ensure the sidebar goes full height */
 }
 
 .sidebar-header {
     -fx-alignment: center-left;
-    -fx-spacing: 10px;
 }
 
 .sidebar-title {
-    -fx-font-size: 26px; /* Increased font size */
-    -fx-font-weight: bold;
-    -fx-text-fill: #000000;
+    -fx-font-size: 26px;
+    -fx-font-weight: 800; /* Ensure bold */
+    -fx-text-fill: #333;
 }
 
 .section-label {
-    -fx-font-size: 12px; /* Increased font size */
-    -fx-text-fill: #666;
-    -fx-padding: 20px 0 0px 0; /* Added padding for separation */
+    -fx-font-size: 11px;
+    -fx-text-fill: #333;
+    -fx-padding: 10px 0;
 }
 
+/* Button styles */
 .button {
     -fx-background-color: transparent;
-    -fx-text-fill: #888;
-    -fx-font-weight: 600;
+    -fx-text-fill: white;
+    -fx-font-weight: 600; /* Ensure bold */
     -fx-background-radius: 10;
     -fx-padding: 10 20;
     -fx-border-color: transparent;
@@ -45,35 +48,55 @@
 }
 
 .button:hover {
-    -fx-text-fill: #333;
+    -fx-text-fill: white;
 }
 
 .button:pressed {
-    -fx-background-color: rgba(76, 175, 80, 0.35);
+    -fx-font-weight: 700; /* Ensure bold */
+    -fx-text-fill: white;
 }
 
-/* Update the button-create class with a fun gradient */
+/* Black button styles */
 .button-create {
-    -fx-background-color: #333;
+    -fx-background-color: #000000;
     -fx-text-fill: white;
-    -fx-font-weight: bold;
+    -fx-font-weight: 700; /* Ensure bold */
     -fx-background-radius: 20;
-    -fx-padding: 10 20; /* Increased padding */
+    -fx-padding: 10 20;
     -fx-alignment: CENTER;
 }
 
 .button-create:hover {
-    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF6347, #FF4500);
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
 }
 
 .button-create:pressed {
-    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF4500, #FF6347);
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+}
+
+.button-send {
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; /* Ensure bold */
+    -fx-background-radius: 20;
+    -fx-padding: 10 20;
+}
+
+
+.button-send:hover {
+    -fx-background-color: #333333;
+}
+
+.button-send:pressed {
+    -fx-background-color: #555555;
 }
 
 /* Updated Separator style */
 .separator {
     -fx-background-color: #E0E0E0;
-    -fx-padding: 5px 0; /* Added padding */
+    -fx-padding: 5px 0;
 }
 
 .icon {
@@ -83,21 +106,36 @@
 /* Update the sidebar-button class text color to match the section-label */
 .sidebar-button {
     -fx-background-color: transparent;
-    -fx-text-fill: #666; /* Same as section-label color */
+    -fx-text-fill: #666;
     -fx-font-size: 14px;
     -fx-border-color: transparent;
     -fx-padding: 0 0;
     -fx-alignment: CENTER_LEFT;
 }
 
+.sidebar-button:hover {
+    -fx-text-fill: #222;
+}
+
+.sidebar-button:pressed {
+    -fx-text-fill: #222;
+    -fx-font-weight: 700; /* Ensure bold */
+}
+
 .sidebar-button .graphic {
     -fx-padding: 0 10 0 0;
+}
+
+/* Define styles for the selected sidebar button */
+.sidebar-button.selected {
+    -fx-font-weight: 700;
+    -fx-text-fill: #333; /* Or any other color you prefer for the selected state */
 }
 
 .button-appointments {
     -fx-background-color: #E3F2FD;
     -fx-text-fill: black;
-    -fx-font-weight: bold;
+    -fx-font-weight: 700; /* Ensure bold */
 }
 
 .button-appointments:hover {
@@ -116,4 +154,163 @@
     -fx-font-size: 14px;
     -fx-font-weight: 600;
     -fx-text-fill: black;
+}
+
+/* Greeting label style */
+.greeting-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: 700; /* Ensure bold */
+    -fx-text-fill: #000;
+}
+
+/* Header bar style */
+.header-bar {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 10px 20px;
+}
+
+.header-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: 700; /* Ensure bold */
+    -fx-text-fill: #333;
+}
+
+/* Center box style */
+.center-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-background-radius: 10px;
+}
+
+/* Input box style */
+.input-box {
+    -fx-padding: 10px 20px; /* Adjust padding for better alignment */
+    -fx-background-color: transparent; /* Make background transparent */
+    -fx-background-radius: 0; /* Remove border radius */
+    -fx-border-color: transparent; /* Remove border color */
+    -fx-border-width: 0; /* Remove border width */
+    -fx-alignment: CENTER; /* Center align items */
+}
+
+/* Modern TextField styling */
+.text-field-modern {
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px; /* Make the border rounder */
+    -fx-background-radius: 20px; /* Make the background rounder */
+    -fx-pref-width: 100%; /* Ensure the text field takes up the full width of its container */
+    -fx-alignment: CENTER_LEFT; /* Align text to the left */
+}
+
+/* Instruction label style */
+.input-instruction {
+    -fx-font-size: 10px; /* Smaller font size */
+    -fx-text-fill: #888; /* Light gray color */
+    -fx-alignment: CENTER; /* Center align text */
+}
+
+/* Add this to your existing CSS file */
+.image-view {
+    -fx-opacity: 1.0;
+    -fx-transition: opacity 0.3s ease-in-out;
+}
+
+/* Archive page styles */
+.archive-page {
+    -fx-background-color: #ffffff; /* Ensure background is white */
+    -fx-padding: 20px; /* Add padding around the table */
+    -fx-alignment: center; /* Center align the table */
+    -fx-pref-width: 100%; /* Ensure the table takes full width */
+}
+
+/* TableView styles */
+.archive-table {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #e0e0e0; /* Light gray border */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-padding: 10px; /* Padding inside the table */
+    -fx-table-cell-border-color: transparent; /* Remove cell borders */
+    -fx-focus-color: transparent; /* Remove focus color */
+    -fx-faint-focus-color: transparent; /* Remove faint focus color */
+    -fx-pref-width: 100%; /* Ensure the table takes full width */
+}
+
+/* TableColumn styles */
+.archive-table-column {
+    -fx-font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    -fx-font-size: 14px; /* Standard font size */
+    -fx-font-weight: 600; /* Semi-bold text */
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-alignment: CENTER_LEFT; /* Align text to the left */
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-color: transparent; /* No border */
+    -fx-padding: 8px 16px; /* Padding inside cells */
+}
+
+/* Header styles */
+.archive-table .column-header-background {
+    -fx-background-color: #f8f9fa; /* Light gray background */
+    -fx-border-color: #e0e0e0; /* Light gray border */
+    -fx-border-width: 0 0 1px 0; /* Bottom border only */
+    -fx-padding: 10px; /* Padding around header */
+}
+
+/* Header text styles */
+.archive-table .column-header .label {
+    -fx-font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    -fx-font-size: 14px; /* Standard font size */
+    -fx-font-weight: 700; /* Bold text */
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-alignment: CENTER_LEFT; /* Align text to the left */
+    -fx-padding: 0 0 5px 0; /* Padding at the bottom */
+}
+
+/* Row styles */
+.archive-table .table-row-cell {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #e0e0e0; /* Light gray border */
+    -fx-border-width: 0 0 1px 0; /* Bottom border only */
+    -fx-padding: 10px; /* Padding inside rows */
+    -fx-alignment: CENTER_LEFT; /* Align text to the left */
+}
+
+.archive-table .table-row-cell:hover {
+    -fx-background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Cell styles */
+.archive-table .table-cell {
+    -fx-font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    -fx-font-size: 14px; /* Standard font size */
+    -fx-text-fill: #666666; /* Medium gray text */
+    -fx-padding: 5px; /* Padding inside cells */
+    -fx-border-color: transparent; /* No border */
+}
+
+/* Selected row styles */
+.archive-table .table-row-cell:selected {
+    -fx-background-color: #e3f2fd; /* Light blue background for selected row */
+    -fx-text-fill: #000000; /* Black text for selected row */
+}
+
+/* Custom scrollbar styles */
+.archive-table .scroll-bar {
+    -fx-padding: 0 4px;
+    -fx-background-color: #f0f0f0; /* Light gray background */
+}
+
+.archive-table .scroll-bar:vertical .thumb,
+.archive-table .scroll-bar:horizontal .thumb {
+    -fx-background-color: #cccccc; /* Gray thumb color */
+    -fx-background-radius: 5px; /* Rounded thumb corners */
+}
+
+.archive-table .scroll-bar:vertical .track,
+.archive-table .scroll-bar:horizontal .track {
+    -fx-background-color: transparent; /* Transparent track */
 }

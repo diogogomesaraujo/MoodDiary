@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontend.DiaryPageController">
+   <bottom>
+      <VBox alignment="CENTER" spacing="5.0" styleClass="input-box">
+         <HBox alignment="CENTER" spacing="-5">
+            <TextField fx:id="textField" promptText="Write your thoughts here." styleClass="text-field-modern" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></TextField>
+            <Button onAction="#submitText" styleClass="button-send" text="➔" />
+         </HBox>
+         <Label styleClass="input-instruction" text="Be assertive to get the best results." />
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="20.0" right="20.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox alignment="TOP_CENTER" fillWidth="true" spacing="20.0" styleClass="center-box" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="sentimentLabel" styleClass="section-label" text="Your emotions will appear below..." />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" fillWidth="true" BorderPane.alignment="CENTER">
+         <ImageView fx:id="emotionImageView" fitHeight="294.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true" />
+      </VBox>
+   </center>
+</BorderPane>

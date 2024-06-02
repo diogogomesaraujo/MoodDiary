@@ -7,6 +7,9 @@ module org.example.frontend {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.net.http;
+    requires jetty.util;
+    requires java.json;
 
     opens org.example.frontend to javafx.fxml;
     exports org.example.frontend;

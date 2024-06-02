@@ -16,18 +16,23 @@
       <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/ArchiveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/DiaryPageController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/SidebarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/emotions/neutral.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Book.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Box 2.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Category 2.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Chart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Home.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/grid-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/home-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/archive.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/diary-page.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/sidebar.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,9 +59,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2hFuYjWCMQmpCMIkcWoK7f8Gd2A" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -68,6 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/diogoaraujo/Desktop/MoodDiary/frontend/src/main/resources/images/icons",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,10 +86,39 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images/icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/org/example/frontend" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/emotions" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/images/icons" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.frontend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.frontend.HelloApplication" />
+      <module name="frontend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,10 +129,23 @@
       <option name="presentableId" value="Default" />
       <updated>1717202195605</updated>
       <workItem from="1717202196652" duration="11324000" />
+      <workItem from="1717214543624" duration="1233000" />
+      <workItem from="1717256225968" duration="30999000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/frontend/HelloApplication.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

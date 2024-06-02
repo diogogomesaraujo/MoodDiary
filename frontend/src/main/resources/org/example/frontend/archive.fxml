@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.frontend.ArchiveController" stylesheets="@style.css" styleClass="archive-page">
+    <TableView fx:id="tableView" styleClass="archive-table" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn text="Date" fx:id="dateColumn" styleClass="archive-table-column"/>
+            <TableColumn text="Message" fx:id="messageColumn" styleClass="archive-table-column"/>
+            <TableColumn text="Emotion" fx:id="emotionColumn" styleClass="archive-table-column"/>
+        </columns>
+    </TableView>
+</VBox>
+
+
