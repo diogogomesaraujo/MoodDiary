@@ -23,21 +23,30 @@
          <BorderPane.margin>
             <Insets bottom="3.0" left="20.0" right="20.0" top="10.0" />
          </BorderPane.margin>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
       </VBox>
    </bottom>
    <top>
-      <VBox alignment="TOP_CENTER" fillWidth="true" spacing="20.0" styleClass="center-box" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" fillWidth="true" prefHeight="30.0" prefWidth="314.0" spacing="20.0" styleClass="center-box" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
          <children>
-            <Label fx:id="sentimentLabel" styleClass="input-instruction" text="Your emotions will appear below..." />
+            <Label fx:id="sentimentLabel" styleClass="section-label" text="Your emotions will appear below...">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Label>
          </children>
       </VBox>
    </top>
    <center>
       <VBox alignment="CENTER" fillWidth="true" BorderPane.alignment="CENTER">
-         <ImageView fx:id="emotionImageView" fitHeight="294.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fx:id="emotionImageView" fitHeight="294.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+            <VBox.margin>
+               <Insets bottom="-10.0" top="20.0" />
+            </VBox.margin></ImageView>
       </VBox>
    </center>
 </BorderPane>

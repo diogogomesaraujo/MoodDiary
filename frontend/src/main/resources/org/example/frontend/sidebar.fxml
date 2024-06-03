@@ -109,13 +109,13 @@
                     </HBox>
                 </children>
                 <VBox.margin>
-                    <Insets />
+                    <Insets bottom="-4.0" />
                 </VBox.margin>
             </VBox>
             <!-- Create New Service Button -->
             <Button onAction="#handleButtonAction" prefHeight="40.0" prefWidth="236.0" styleClass="button-create" text="Write your feelings.">
                 <VBox.margin>
-                    <Insets />
+                    <Insets bottom="5.0" />
                 </VBox.margin>
             </Button>
         </VBox>

@@ -17,8 +17,6 @@
     </properties>
 
     <dependencies>
-
-        Copy code
         <dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.json</artifactId>

@@ -32,6 +32,7 @@
     -fx-font-size: 11px;
     -fx-text-fill: #333;
     -fx-padding: 10px 0;
+    -fx-transition: opacity 0.3s ease-in-out;
 }
 
 /* Button styles */
@@ -339,44 +340,35 @@
     -fx-text-fill: #ffffff; /* White text */
 }
 
-.statsPieChart {
-    -fx-pie-label-visible: true;
-    -fx-label-line-color: #666; /* Gray lines for labels */
-    -fx-start-angle: 90;
+.image-glow {
+    -fx-effect: dropshadow(gaussian, rgba(255, 190, 11, 0.2), 150, 0.1, 0, 0);
 }
 
-.pie-chart .chart-series-pie {
-    -fx-pie-size: 80%; /* Smaller chart size for padding */
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 3, 3);
+.image-glow-happy {
+    -fx-effect: dropshadow(gaussian, rgba(255, 223, 0, 0.3), 150, 0.1, 0, 0); /* Bright Yellow */
 }
 
-.pie-chart .chart-pie-label {
-    -fx-font-size: 12px; /* Smaller font size for labels */
-    -fx-fill: #333; /* Darker text for better readability */
+.image-glow-sad {
+    -fx-effect: dropshadow(gaussian, rgba(0, 122, 255, 0.3), 150, 0.1, 0, 0); /* Deep Blue */
 }
 
-.pie-chart .data {
-    -fx-pie-slice-fill: transparent;
-    -fx-transition: fill 0.5s ease-out;
+.image-glow-fear {
+    -fx-effect: dropshadow(gaussian, rgba(138, 43, 226, 0.3), 150, 0.1, 0, 0); /* Dark Purple */
 }
 
-.pie-chart:hover .data {
-    -fx-scale: 1.05;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 3, 3);
+.image-glow-surprise {
+    -fx-effect: dropshadow(gaussian, rgba(255, 69, 0, 0.3), 150, 0.1, 0, 0); /* Bright Orange-Red */
 }
 
-.chart-color-1 { -fx-pie-color: #4285F4; }
-.chart-color-2 { -fx-pie-color: #EA4335; }
-.chart-color-3 { -fx-pie-color: #FBBC05; }
-.chart-color-4 { -fx-pie-color: #34A853; }
-.chart-color-5 { -fx-pie-color: #FF6F61; }
-
-.pie-chart {
-    -fx-border-color: transparent; /* Remove border */
-    -fx-background-color: transparent; /* Remove background */
+.image-glow-neutral {
+    -fx-effect: dropshadow(gaussian, rgba(169, 169, 169, 0.3), 150, 0.1, 0, 0); /* Grey */
 }
 
-.pie-chart .chart-legend {
-    -fx-background-color: transparent; /* Legend transparent */
-    -fx-padding: 10px;
+.image-glow-disgust {
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 0, 0.3), 151, 0.1, 0, 0); /* Bright Green */
 }
+
+.image-glow-anger {
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.3), 150, 0.1, 0, 0); /* Bright Red */
+}
+

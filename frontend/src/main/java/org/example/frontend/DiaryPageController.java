@@ -33,13 +33,13 @@ import java.util.Locale;
 public class DiaryPageController {
 
     @FXML
-    private Label sentimentLabel;
-
-    @FXML
     private TextField textField;
 
     @FXML
     private ImageView emotionImageView;
+
+    @FXML
+    private Label sentimentLabel;
 
     private static final String API_URL = "https://mooddiary.kreativitat.com/emotion";
     private static final String API_KEY = "8a352885-623b-4077-82fb-4d33f7dd8dd0";  // Replace with your actual API key
@@ -58,16 +58,25 @@ public class DiaryPageController {
     @FXML
     private void analyzeSentiment() {
         String text = textField.getText();
+        if (text == null || text.trim().isEmpty()) {
+            return; // Ignore empty input
+        }
+
         String sentiment = analyzeTextSentiment(text);
-        updateSentimentLabel(sentiment);
         updateEmotionImage(sentiment);
+        updateSentimentLabel(sentiment);
         saveTextAndEmotion(text, sentiment);
+        textField.clear(); // Clear the text field after analysis
     }
 
     @FXML
     private void submitText() {
-        analyzeSentiment();
-        textField.clear();
+        try {
+            analyzeSentiment();
+        } catch (Exception e) {
+            e.printStackTrace();
+            textField.setText("An error occurred. Please try again.");
+        }
     }
 
     private String analyzeTextSentiment(String text) {
@@ -90,37 +99,6 @@ public class DiaryPageController {
         }
     }
 
-    private void updateSentimentLabel(String emotion) {
-        String message;
-        switch (emotion) {
-            case "joy":
-                message = "You seem happy!";
-                break;
-            case "sadness":
-                message = "You seem sad.";
-                break;
-            case "fear":
-                message = "You seem fearful.";
-                break;
-            case "surprise":
-                message = "You seem surprised!";
-                break;
-            case "neutral":
-                message = "You seem neutral.";
-                break;
-            case "disgust":
-                message = "You seem disgusted.";
-                break;
-            case "anger":
-                message = "You seem angry.";
-                break;
-            default:
-                message = "❗ Error in analyzing sentiment.";
-                break;
-        }
-        sentimentLabel.setText(message);
-    }
-
     private void updateEmotionImage(String emotion) {
         String imagePath = "/images/emotions/" + emotion + ".png";
         URL imageUrl = getClass().getResource(imagePath);
@@ -133,11 +111,13 @@ public class DiaryPageController {
 
         Image image = new Image(imageUrl.toExternalForm());
 
+        // Fade out image
         FadeTransition fadeOutImage = new FadeTransition(Duration.millis(500), emotionImageView);
         fadeOutImage.setFromValue(1.0);
         fadeOutImage.setToValue(0.0);
         fadeOutImage.setOnFinished(event -> {
             emotionImageView.setImage(image);
+            setImageGlowEffect(emotion);
 
             FadeTransition fadeInImage = new FadeTransition(Duration.millis(500), emotionImageView);
             fadeInImage.setFromValue(0.0);
@@ -154,6 +134,79 @@ public class DiaryPageController {
         });
 
         fadeOutImage.play();
+    }
+
+    private void setImageGlowEffect(String emotion) {
+        String styleClass;
+        switch (emotion) {
+            case "joy":
+                styleClass = "image-glow-happy";
+                break;
+            case "sadness":
+                styleClass = "image-glow-sad";
+                break;
+            case "fear":
+                styleClass = "image-glow-fear";
+                break;
+            case "surprise":
+                styleClass = "image-glow-surprise";
+                break;
+            case "neutral":
+                styleClass = "image-glow-neutral";
+                break;
+            case "disgust":
+                styleClass = "image-glow-disgust";
+                break;
+            case "anger":
+                styleClass = "image-glow-anger";
+                break;
+            default:
+                styleClass = "image-glow";
+                break;
+        }
+        emotionImageView.getStyleClass().clear();
+        emotionImageView.getStyleClass().add(styleClass);
+    }
+
+    private void updateSentimentLabel(String emotion) {
+        String phrase;
+        switch (emotion) {
+            case "joy":
+                phrase = "Yay! Feeling joyful! 😄";
+                break;
+            case "sadness":
+                phrase = "Oh no, feeling blue. 😢";
+                break;
+            case "fear":
+                phrase = "Eek! Something scared you! 😱";
+                break;
+            case "surprise":
+                phrase = "Wow! What a surprise! 😲";
+                break;
+            case "neutral":
+                phrase = "Meh, just feeling neutral. 😐";
+                break;
+            case "disgust":
+                phrase = "Yuck! That's so gross. 🤢";
+                break;
+            case "anger":
+                phrase = "Grr! Feeling really angry! 😡";
+                break;
+            default:
+                phrase = "Hmm, can't tell your emotion. 🤔";
+                break;
+        }
+        sentimentLabel.setText(phrase);
+        sentimentLabel.setVisible(true);
+
+        // Apply CSS for larger font size
+
+
+        // Fade in the label with the new phrase
+        FadeTransition fadeInLabel = new FadeTransition(Duration.millis(500), sentimentLabel);
+        fadeInLabel.setFromValue(0.0);
+        fadeInLabel.setToValue(1.0);
+        fadeInLabel.play();
     }
 
     private void saveTextAndEmotion(String text, String emotion) {

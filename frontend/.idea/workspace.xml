@@ -84,6 +84,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -92,11 +95,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources/images/icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/org/example/frontend" />
       <recent name="$PROJECT_DIR$/src/main/resources/images/emotions" />
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/icons" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.frontend" />
@@ -140,22 +143,18 @@
       <workItem from="1717202196652" duration="11324000" />
       <workItem from="1717214543624" duration="1233000" />
       <workItem from="1717256225968" duration="33924000" />
-      <workItem from="1717297227010" duration="5039000" />
+      <workItem from="1717297227010" duration="5392000" />
+      <workItem from="1717329719798" duration="50000" />
+      <workItem from="1717336456650" duration="523000" />
+      <workItem from="1717337254653" duration="5723000" />
+      <workItem from="1717362238690" duration="6520000" />
+      <workItem from="1717405546789" duration="35000" />
+      <workItem from="1717405624371" duration="427000" />
+      <workItem from="1717432175952" duration="333000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/frontend/HelloApplication.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

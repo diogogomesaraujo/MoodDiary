@@ -3,10 +3,12 @@ package org.example.frontend;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HelloApplication extends Application {
     @Override
@@ -27,6 +29,9 @@ public class HelloApplication extends Application {
         stage.setWidth(689); // Adjust width as needed
         stage.setHeight(500);
         stage.setResizable(false);
+
+        // Set the application icon
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/images/logo-app.png"))));
 
         stage.show();
 

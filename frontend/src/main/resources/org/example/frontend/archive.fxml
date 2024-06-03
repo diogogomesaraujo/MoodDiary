@@ -13,7 +13,7 @@
             <TableView fx:id="tableView" styleClass="archive-table" VBox.vgrow="ALWAYS">
                 <columns>
                     <TableColumn fx:id="dateColumn" prefWidth="150" styleClass="archive-table-column" text="Date" />
-                    <TableColumn fx:id="messageColumn" prefWidth="300" styleClass="archive-table-column" text="Message" />
+                    <TableColumn fx:id="messageColumn" prefWidth="150" styleClass="archive-table-column" text="Message" />
                     <TableColumn fx:id="emotionColumn" prefWidth="150" styleClass="archive-table-column" text="Emotion" />
                 </columns>
             </TableView>
