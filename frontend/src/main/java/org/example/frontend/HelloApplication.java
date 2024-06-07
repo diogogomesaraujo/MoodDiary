@@ -22,7 +22,7 @@ public class HelloApplication extends Application {
 
         Scene scene = new Scene(root, 689, 500); // Adjust dimensions as needed
         scene.getStylesheets().add(getClass().getResource("/org/example/frontend/style.css").toExternalForm());
-        stage.setTitle("MoodDiary");
+        stage.setTitle("MoodDiary.");
         stage.setScene(scene);
 
         // Set fixed size and disable resizing

@@ -83,6 +83,7 @@
     -fx-font-weight: 900; /* Ensure bold */
     -fx-background-radius: 20;
     -fx-padding: 10 20;
+    -fx-order: 3;
 }
 
 .button-send:hover {
@@ -205,6 +206,7 @@
     -fx-background-radius: 20px; /* Make the background rounder */
     -fx-pref-width: 100%; /* Ensure the text field takes up the full width of its container */
     -fx-alignment: CENTER_LEFT; /* Align text to the left */
+    -fx-order: 3;
 }
 
 /* Instruction label style */
@@ -218,6 +220,7 @@
 .image-view {
     -fx-opacity: 1.0;
     -fx-transition: opacity 0.3s ease-in-out;
+    -fx-order: -100;
 }
 
 /* Archive page styles */

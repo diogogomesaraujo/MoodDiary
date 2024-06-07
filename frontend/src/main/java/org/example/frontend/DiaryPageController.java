@@ -3,6 +3,7 @@ package org.example.frontend;
 import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -41,6 +42,9 @@ public class DiaryPageController {
     @FXML
     private Label sentimentLabel;
 
+    @FXML
+    private Button sendButton;
+
     private static final String API_URL = "https://mooddiary.kreativitat.com/emotion";
     private static final String API_KEY = "8a352885-623b-4077-82fb-4d33f7dd8dd0";  // Replace with your actual API key
     private static final String FILE_PATH = "diary_entries.json";
@@ -76,6 +80,10 @@ public class DiaryPageController {
         } catch (Exception e) {
             e.printStackTrace();
             textField.setText("An error occurred. Please try again.");
+        } finally {
+            textField.requestFocus();
+            sendButton.setDisable(false); // Ensure button is enabled
+            sendButton.setOpacity(1.0);   // Ensure button is fully visible
         }
     }
 
@@ -126,9 +134,10 @@ public class DiaryPageController {
             ScaleTransition scaleIn = new ScaleTransition(Duration.millis(500), emotionImageView);
             scaleIn.setFromX(0.5);
             scaleIn.setFromY(0.5);
-            scaleIn.setToX(1.2);
-            scaleIn.setToY(1.2);
+            scaleIn.setToX(1);
+            scaleIn.setToY(1);
 
+            fadeInImage.setOnFinished(e -> textField.requestFocus());
             fadeInImage.play();
             scaleIn.play();
         });
@@ -198,9 +207,6 @@ public class DiaryPageController {
         }
         sentimentLabel.setText(phrase);
         sentimentLabel.setVisible(true);
-
-        // Apply CSS for larger font size
-
 
         // Fade in the label with the new phrase
         FadeTransition fadeInLabel = new FadeTransition(Duration.millis(500), sentimentLabel);
