@@ -2,7 +2,7 @@
 <br/>
 <div align="center">
 <a href="https://github.com/ShaanCoding/ReadME-Generator">
-<img src="assets/logo.png" alt="Logo" width="150" height="150">
+<img src="assets/logo-app.png" alt="Logo" width="150" height="150">
 </a>
 <h1 align="center">MoodDiary.</h1>
 <p align="center">
