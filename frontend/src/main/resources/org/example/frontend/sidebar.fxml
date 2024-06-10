@@ -20,16 +20,16 @@
                 <VBox.margin>
                     <Insets top="5.0" />
                 </VBox.margin>
-            <children>
-               <ImageView fitHeight="58.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
-                  <image>
-                     <Image url="@../../../images/logo-lettring.png" />
-                  </image>
-                  <HBox.margin>
-                     <Insets left="-1.0" />
-                  </HBox.margin>
-               </ImageView>
-            </children>
+                <children>
+                    <ImageView fitHeight="58.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../images/logo-lettring.png" />
+                        </image>
+                        <HBox.margin>
+                            <Insets left="-1.0" />
+                        </HBox.margin>
+                    </ImageView>
+                </children>
             </HBox>
             <!-- Service Management Label -->
             <Label styleClass="section-label" text="SERVICES">
@@ -58,18 +58,6 @@
                                     <Image url="@../../../images/icons/Book.png" />
                                 </image></ImageView>
                             <Button fx:id="journalButton" mnemonicParsing="false" onAction="#handleJournalAction" prefHeight="40.0" prefWidth="110.0" styleClass="sidebar-button" text="Journal">
-                                <HBox.margin>
-                                    <Insets left="15.0" />
-                                </HBox.margin></Button>
-                        </children>
-                    </HBox>
-                    <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="176.0">
-                        <children>
-                            <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
-                                <image>
-                                    <Image url="@../../../images/icons/Chart.png" />
-                                </image></ImageView>
-                            <Button fx:id="statisticsButton" mnemonicParsing="false" onAction="#handleStatisticsAction" prefHeight="40.0" prefWidth="110.0" styleClass="sidebar-button" text="Statistics">
                                 <HBox.margin>
                                     <Insets left="15.0" />
                                 </HBox.margin></Button>

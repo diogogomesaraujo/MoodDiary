@@ -21,7 +21,7 @@
          </HBox>
          <Label styleClass="input-instruction" text="Be assertive to get the best results." />
          <BorderPane.margin>
-            <Insets bottom="3.0" left="20.0" right="20.0" top="10.0" />
+            <Insets bottom="10.0" left="20.0" right="20.0" top="11.0" />
          </BorderPane.margin>
          <padding>
             <Insets top="2.0" />
@@ -39,13 +39,16 @@
                   <Insets />
                </VBox.margin></Label>
          </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
       </VBox>
    </top>
    <center>
       <VBox alignment="CENTER" fillWidth="true" BorderPane.alignment="CENTER">
-         <ImageView fx:id="emotionImageView" fitHeight="294.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true" style="-fx-order: 0;">
+         <ImageView fx:id="emotionImageView" fitHeight="283.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" style="-fx-order: 0;">
             <VBox.margin>
-               <Insets bottom="15" top="0" />
+               <Insets bottom="11.0" top="10.0" />
             </VBox.margin></ImageView>
       </VBox>
    </center>

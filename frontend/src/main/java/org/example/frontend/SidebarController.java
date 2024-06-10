@@ -44,12 +44,6 @@ public class SidebarController {
     }
 
     @FXML
-    private void handleStatisticsAction() throws IOException {
-        loadPage("statistics.fxml");
-        setSelectedButton(statisticsButton);
-    }
-
-    @FXML
     private void handleArchiveAction() throws IOException {
         loadPage("archive.fxml");
         setSelectedButton(archiveButton);
@@ -75,7 +69,6 @@ public class SidebarController {
     public void setSelectedButton(Button selectedButton) {
         dashboardButton.getStyleClass().remove("selected");
         journalButton.getStyleClass().remove("selected");
-        statisticsButton.getStyleClass().remove("selected");
         archiveButton.getStyleClass().remove("selected");
         settingsButton.getStyleClass().remove("selected");
 

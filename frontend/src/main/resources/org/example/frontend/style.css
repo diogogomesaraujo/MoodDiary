@@ -166,14 +166,16 @@
 
 /* Header bar style */
 .header-bar {
-    -fx-background-color: #f8f9fa;
+    -fx-background-color: #ffffff;
     -fx-padding: 10px 20px;
 }
 
 .header-title {
-    -fx-font-size: 26px;
-    -fx-font-weight: 700; /* Ensure bold */
-    -fx-text-fill: #333;
+    -fx-font-size: 32px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #333333;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 0 0 20px;
 }
 
 /* Center box style */
@@ -375,3 +377,157 @@
     -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.3), 150, 0.1, 0, 0); /* Bright Red */
 }
 
+/* Dashboard styles */
+.header-bar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px 20px;
+}
+
+.header-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #333333;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 0 0 20px;
+}
+
+/* style.css */
+.info-card {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+    -fx-alignment: center;
+}
+
+.emotion-card {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+    -fx-alignment: center;
+}
+
+.emotion-card.joy {
+    -fx-background-color: linear-gradient(to right, #ffebcc, #ffcc99); /* More prominent pastel yellow */
+}
+
+.emotion-card.sadness {
+    -fx-background-color: linear-gradient(to right, #b5cfff, #99b3ff); /* More prominent pastel blue */
+}
+
+.emotion-card.fear {
+    -fx-background-color: linear-gradient(to right, #dab5ff, #c299ff); /* More prominent pastel purple */
+}
+
+.emotion-card.surprise {
+    -fx-background-color: linear-gradient(to right, #ffb5b5, #ff9999); /* More prominent pastel red */
+}
+
+.emotion-card.neutral {
+    -fx-background-color: linear-gradient(to right, #d9d9d9, #c2c2c2); /* Pastel grey */
+}
+
+.emotion-card.disgust {
+    -fx-background-color: linear-gradient(to right, #ccffcc, #b5ffb5); /* Pastel green */
+}
+
+.emotion-card.anger {
+    -fx-background-color: linear-gradient(to right, #ffb5b5, #ff9999); /* Pastel pink */
+}
+
+.card-content {
+    -fx-alignment: center;
+}
+
+.card-title {
+    -fx-font-size: 1em;
+    -fx-text-fill: white; /* Changed text color to white */
+}
+
+.card-value {
+    -fx-font-size: 2em;
+    -fx-text-fill: white; /* Changed text color to white */
+    -fx-font-weight: bold;
+}
+
+.black-text .card-title {
+    -fx-text-fill: black; /* Changed text color to black */
+}
+
+.black-text .card-value {
+    -fx-text-fill: black; /* Changed text color to black */
+}
+
+.header-bar {
+    -fx-padding: 10;
+}
+
+.header-title {
+    -fx-font-size: 2em !important;
+}
+
+.center-box {
+    -fx-padding: 20;
+    -fx-alignment: center;
+}
+
+/* Define a new style for the white card */
+.white-card {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+    -fx-alignment: center;
+}
+
+.white-card .card-title {
+    -fx-text-fill: black;
+    -fx-font-size: 1.2em; /* Increase the font size */
+}
+
+.white-card .card-value {
+    -fx-text-fill: black;
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+}
+
+/* Black theme for the graph */
+.line-chart {
+    -fx-background-color: transparent;
+    -fx-padding: 20;
+}
+
+.line-chart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.line-chart .chart-series-line {
+    -fx-stroke: #ff6f61;
+    -fx-stroke-width: 2px;
+}
+
+.line-chart .chart-legend-item-symbol {
+    -fx-background-color: #ff6f61, #ff6f61;
+}
+
+.line-chart .chart-title {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+}
+
+.line-chart .axis-label {
+    -fx-text-fill: #333;
+    -fx-font-size: 12px;
+}
+
+.line-chart .axis-tick-mark {
+    -fx-stroke: transparent; /* Hide tick marks */
+}
+
+.line-chart .axis-tick-label {
+    -fx-text-fill: transparent; /* Hide tick labels */
+}

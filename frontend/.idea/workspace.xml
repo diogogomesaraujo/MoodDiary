@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81cf6110-dc06-4c97-b434-55457b422886" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/ArchiveController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/DiaryPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/SidebarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/frontend/StatisticsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/emotions/neutral.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Box 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Category 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Chart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/Settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/archive.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/diary-page.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/sidebar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/statistics.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/frontend/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="81cf6110-dc06-4c97-b434-55457b422886" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -70,26 +38,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/diogoaraujo/Desktop/MoodDiary/frontend/src/main/resources/images/icons&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/diogoaraujo/Desktop/MoodDiary/frontend/src/main/resources/images/icons",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/images/icons" />
@@ -157,6 +126,12 @@
       <workItem from="1717600400921" duration="345000" />
       <workItem from="1717668052851" duration="40000" />
       <workItem from="1717782366063" duration="2452000" />
+      <workItem from="1717862303498" duration="462000" />
+      <workItem from="1717952023431" duration="291000" />
+      <workItem from="1717966916165" duration="798000" />
+      <workItem from="1717973434608" duration="33000" />
+      <workItem from="1717973495049" duration="93000" />
+      <workItem from="1717973592724" duration="15111000" />
     </task>
     <servers />
   </component>
